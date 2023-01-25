@@ -127,3 +127,223 @@ Migrating to AddAuthorDetailsToArticles (20230124195758)
   [1m[36mArticle Create (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Big Mess"], ["description", "How can we assess the issues that have brought problems to our planet with new emerging poor and inconsiderate GOVT reforms to climate."], ["created_at", "2023-01-25 01:06:41.282162"], ["updated_at", "2023-01-25 01:06:41.282162"], ["topic", "Politics"], ["likes", "<4 bytes of binary data>"], ["author_name", "Joe Malone"], ["is_pro_user", 0]]
   [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Started GET "/articles" for 127.0.0.1 at 2023-01-24 20:26:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+Started GET "/articles/4" for 127.0.0.1 at 2023-01-24 20:30:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 638.3ms | Allocations: 89136)
+Completed 200 OK in 649ms (Views: 641.9ms | ActiveRecord: 0.0ms | Allocations: 91988)
+
+
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Started GET "/articles/7" for 127.0.0.1 at 2023-01-24 20:33:54 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:4:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 1.7ms | Allocations: 4743)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=7):
+  
+app/controllers/articles_controller.rb:4:in `show'
+Started GET "/articles/6" for 127.0.0.1 at 2023-01-24 20:33:59 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:4:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=6):
+  
+app/controllers/articles_controller.rb:4:in `show'
+Started GET "/articles/6" for 127.0.0.1 at 2023-01-24 20:40:45 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.8ms | Allocations: 2605)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=6):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles/6" for 127.0.0.1 at 2023-01-24 20:40:47 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 915)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=6):
+  
+app/controllers/articles_controller.rb:8:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-24 20:40:51 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1151)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1239)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 7458)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<ActionView::Base:0x000000000126b0>):
+    4: <%# also helps to write ruby code inside html %>
+    5: <%# <%= variable - means evaluate and render to the screen %>
+    6: 
+    7: <p><strong>Title:</strong> <%= article.title %></p>
+    8: <p><strong>Description:</strong> <%= article.description %> </p>
+    9: <p><strong>Author:</strong> <%= @article.author_name %></p>
+  
+app/views/articles/show.html.erb:7
+Started GET "/articles/1" for 127.0.0.1 at 2023-01-24 20:42:17 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 13700)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms | Allocations: 14910)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2023-01-24 20:42:22 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2299)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3037)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2023-01-24 20:45:23 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 500 Internal Server Error in 1ms (Allocations: 437)
+
+
+  
+NameError (undefined local variable or method `byebug' for #<ArticlesController:0x00000000016288>):
+  
+app/controllers/articles_controller.rb:4:in `show'
+Started GET "/articles/5" for 127.0.0.1 at 2023-01-24 20:46:23 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 500 Internal Server Error in 1ms (Allocations: 449)
+
+
+  
+NameError (undefined local variable or method `byebug' for #<ArticlesController:0x000000000165f8>):
+  
+app/controllers/articles_controller.rb:4:in `show'
+Started GET "/" for 127.0.0.1 at 2023-01-24 20:46:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/homestars/.rvm/gems/ruby-3.2.0/gems/railties-7.0.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/homestars/.rvm/gems/ruby-3.2.0/gems/railties-7.0.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 460)
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3150)
+
+
+Started GET "/article/2" for 127.0.0.1 at 2023-01-24 20:46:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/article/2"):
+  
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-24 20:46:55 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 500)
+
+
+  
+NameError (undefined local variable or method `byebug' for #<ArticlesController:0x0000000000a870>):
+  
+app/controllers/articles_controller.rb:4:in `show'
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-24 20:48:06 -0500
+  
+LoadError (cannot load such file -- byebug):
+  
+app/controllers/articles_controller.rb:1:in `<main>'
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-24 20:50:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 31580ms (ActiveRecord: 0.0ms | Allocations: 71503)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-24 20:50:51 -0500
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/articles_controller.rb:12:in `show'
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 27474)
+  Rendered layout layouts/application.html.erb (Duration: 971.8ms | Allocations: 10796582)
+Completed 200 OK in 1526ms (Views: 1240.3ms | ActiveRecord: 13.0ms | Allocations: 12246409)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2023-01-24 20:51:08 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 20023ms (Allocations: 58930)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/articles_controller.rb:12:in `show'
+Started GET "/articles/3" for 127.0.0.1 at 2023-01-24 20:52:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 422)
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 34237)
+Completed 200 OK in 75889ms (Views: 75.9ms | ActiveRecord: 1.0ms | Allocations: 98090)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2023-01-24 20:53:48 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 13232)
+Completed 200 OK in 31379ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 26627)
+
+

@@ -1,0 +1,9 @@
+<h1>Showing Article details</h1>
+
+<%# use embedded ruby tags to access values from the instance variable %>
+<%# also helps to write ruby code inside html %>
+<%# <%= variable - means evaluate and render to the screen %>
+
+<p><strong>Title:</strong> <%= @article.title %></p>
+<p><strong>Description:</strong> <%= @article.description %> </p>
+<p><strong>Author:</strong> <%= @article.author_name %></p>
