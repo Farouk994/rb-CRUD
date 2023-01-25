@@ -67,3 +67,63 @@ Migrating to AddAuthorDetailsToArticles (20230124195758)
   [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (3.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The End of ChatGPT"], ["description", "The end is here for open AI that has caused much desctruction and disunity and alot of chaos in the modern world"], ["created_at", "2023-01-24 20:17:10.726770"], ["updated_at", "2023-01-24 20:17:10.726770"], ["topic", "Technology"], ["likes", "<6 bytes of binary data>"], ["author_name", "Jack Niche"], ["is_pro_user", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Issues of using React.js"], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."], ["created_at", "2023-01-24 20:29:33.382513"], ["updated_at", "2023-01-24 20:29:33.382513"], ["topic", "Technology"], ["likes", "<4 bytes of binary data>"], ["author_name", "Kiwanuka Ben"], ["is_pro_user", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Save Now or Never"], ["description", "Become financial responsible during this recession as it be here for a while, be open to new ideas and invest wisely when it comes to markets and business in general"], ["created_at", "2023-01-24 20:33:53.777358"], ["updated_at", "2023-01-24 20:33:53.777358"], ["topic", "Business"], ["likes", "<5 bytes of binary data>"], ["author_name", "Sarah Payson"], ["is_pro_user", 0]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (3.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Mysterious Conspiracies"], ["description", "This will freak you out when you find out"], ["created_at", "2023-01-25 00:13:55.739382"], ["updated_at", "2023-01-25 00:13:55.739382"], ["topic", "Conspiracy"], ["likes", "<4 bytes of binary data>"], ["author_name", "Hannah Bosch"], ["is_pro_user", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The curious Scaler"], ["description", "The never ending sequence of companies scaling then chopping jobs. Thoughts?"], ["created_at", "2023-01-25 00:18:45.929692"], ["updated_at", "2023-01-25 00:18:45.929692"], ["topic", "Technology"], ["likes", "<3 bytes of binary data>"], ["author_name", "John Mukasa"], ["is_pro_user", 0]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Update (3.9ms)[0m  [1m[33mUPDATE "articles" SET "updated_at" = ?, "is_pro_user" = ? WHERE "articles"."id" = ?[0m  [["updated_at", "2023-01-25 00:41:43.916222"], ["is_pro_user", 0], ["id", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Red Wave"], ["description", "this is a simulation, we are in the matrix"], ["created_at", "2023-01-25 00:43:01.018599"], ["updated_at", "2023-01-25 00:43:01.018599"], ["topic", nil], ["likes", nil], ["author_name", nil], ["is_pro_user", nil]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Destroy (2.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "a"], ["description", "t"], ["created_at", "2023-01-25 00:56:44.622681"], ["updated_at", "2023-01-25 00:56:44.622681"], ["topic", nil], ["likes", nil], ["author_name", nil], ["is_pro_user", nil]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Destroy (1.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The curious case of OpenAI technology in 2023"], ["description", "This has come to our attention that OpenAI has brought more damage than good to the working to new working economy and schools in Nottingham, England."], ["created_at", "2023-01-25 01:02:16.481877"], ["updated_at", "2023-01-25 01:02:16.481877"], ["topic", nil], ["likes", nil], ["author_name", nil], ["is_pro_user", nil]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "topic", "likes", "author_name", "is_pro_user") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "The Big Mess"], ["description", "How can we assess the issues that have brought problems to our planet with new emerging poor and inconsiderate GOVT reforms to climate."], ["created_at", "2023-01-25 01:06:41.282162"], ["updated_at", "2023-01-25 01:06:41.282162"], ["topic", "Politics"], ["likes", "<4 bytes of binary data>"], ["author_name", "Joe Malone"], ["is_pro_user", 0]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
