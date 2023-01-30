@@ -347,3 +347,291 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 31379ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 26627)
 
 
+Started GET "/articles/5" for 127.0.0.1 at 2023-01-25 11:09:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+Completed 500 Internal Server Error in 37103ms (ActiveRecord: 0.0ms | Allocations: 55809)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/articles_controller.rb:15:in `show'
+Started GET "/articles/5" for 127.0.0.1 at 2023-01-25 11:09:53 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 33631)
+Completed 200 OK in 7267ms (Views: 62.4ms | ActiveRecord: 0.9ms | Allocations: 66535)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:10:07 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2300)
+Completed 200 OK in 505128ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 5322)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:18:42 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2468)
+Completed 200 OK in 19324ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 5273)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:19:02 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 13402)
+Completed 200 OK in 30ms (Views: 19.4ms | ActiveRecord: 1.8ms | Allocations: 18500)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:19:05 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2268)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3004)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:19:09 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2263)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3012)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:19:29 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 13206)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 1.3ms | Allocations: 18174)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:20:02 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 13402)
+Completed 200 OK in 23264ms (Views: 13.6ms | ActiveRecord: 1.0ms | Allocations: 21435)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:20:30 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 13196)
+Completed 200 OK in 36737ms (Views: 14.3ms | ActiveRecord: 1.0ms | Allocations: 20827)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:21:08 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 13439)
+Completed 200 OK in 29ms (Views: 16.6ms | ActiveRecord: 0.8ms | Allocations: 18404)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2023-01-25 11:21:09 -0500
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2287)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 3024)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 18:59:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 107.5ms | Allocations: 33628)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 0.0ms | Allocations: 36472)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:00:45 -0500
+Processing by ArticlesController#index as HTML
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms | Allocations: 1925)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article without an ID):
+  
+app/controllers/articles_controller.rb:22:in `index'
+Started GET "/articles" for ::1 at 2023-01-29 19:01:17 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 9935)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 10023)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.6ms | Allocations: 11683)
+
+
+  
+ActionView::Template::Error (undefined method `author_name' for #<ActiveRecord::Relation [#<Article id: 1, title: "The End of ChatGPT", description: "The end is here for open AI that has caused much d...", created_at: "2023-01-24 20:17:10.726770000 +0000", updated_at: "2023-01-25 00:41:43.916222000 +0000", topic: "Technology", likes: "155800", author_name: "Jack Niche", is_pro_user: false>, #<Article id: 2, title: "Issues of using React.js", description: "Lorem ipsum dolor sit amet, consectetur adipiscing...", created_at: "2023-01-24 20:29:33.382513000 +0000", updated_at: "2023-01-24 20:29:33.382513000 +0000", topic: "Technology", likes: "7882", author_name: "Kiwanuka Ben", is_pro_user: true>, #<Article id: 3, title: "Save Now or Never", description: "Become financial responsible during this recession...", created_at: "2023-01-24 20:33:53.777358000 +0000", updated_at: "2023-01-24 20:33:53.777358000 +0000", topic: "Business", likes: "25187", author_name: "Sarah Payson", is_pro_user: false>, #<Article id: 4, title: "Mysterious Conspiracies", description: "This will freak you out when you find out", created_at: "2023-01-25 00:13:55.739382000 +0000", updated_at: "2023-01-25 00:13:55.739382000 +0000", topic: "Conspiracy", likes: "4511", author_name: "Hannah Bosch", is_pro_user: true>, #<Article id: 5, title: "The curious Scaler", description: "The never ending sequence of companies scaling the...", created_at: "2023-01-25 00:18:45.929692000 +0000", updated_at: "2023-01-25 00:18:45.929692000 +0000", topic: "Technology", likes: "780", author_name: "John Mukasa", is_pro_user: false>, #<Article id: 8, title: "The curious case of OpenAI technology in 2023", description: "This has come to our attention that OpenAI has bro...", created_at: "2023-01-25 01:02:16.481877000 +0000", updated_at: "2023-01-25 01:02:16.481877000 +0000", topic: nil, likes: nil, author_name: nil, is_pro_user: nil>, #<Article id: 9, title: "The Big Mess", description: "How can we assess the issues that have brought pro...", created_at: "2023-01-25 01:06:41.282162000 +0000", updated_at: "2023-01-25 01:06:41.282162000 +0000", topic: "Politics", likes: "5111", author_name: "Joe Malone", is_pro_user: false>]>):
+    4: <%# also helps to write ruby code inside html %>
+    5: <%# <%= variable - means evaluate and render to the screen %>
+    6: 
+    7: <h1><%= @articles.author_name%></h1>
+    8: <br></br>
+    9: <hr/>
+  
+app/views/articles/index.html.erb:7
+Started GET "/articles" for ::1 at 2023-01-29 19:04:53 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3056)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3145)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 3846)
+
+
+  
+ActionView::Template::Error (undefined method `author_name' for #<ActiveRecord::Relation [#<Article id: 1, title: "The End of ChatGPT", description: "The end is here for open AI that has caused much d...", created_at: "2023-01-24 20:17:10.726770000 +0000", updated_at: "2023-01-25 00:41:43.916222000 +0000", topic: "Technology", likes: "155800", author_name: "Jack Niche", is_pro_user: false>, #<Article id: 2, title: "Issues of using React.js", description: "Lorem ipsum dolor sit amet, consectetur adipiscing...", created_at: "2023-01-24 20:29:33.382513000 +0000", updated_at: "2023-01-24 20:29:33.382513000 +0000", topic: "Technology", likes: "7882", author_name: "Kiwanuka Ben", is_pro_user: true>, #<Article id: 3, title: "Save Now or Never", description: "Become financial responsible during this recession...", created_at: "2023-01-24 20:33:53.777358000 +0000", updated_at: "2023-01-24 20:33:53.777358000 +0000", topic: "Business", likes: "25187", author_name: "Sarah Payson", is_pro_user: false>, #<Article id: 4, title: "Mysterious Conspiracies", description: "This will freak you out when you find out", created_at: "2023-01-25 00:13:55.739382000 +0000", updated_at: "2023-01-25 00:13:55.739382000 +0000", topic: "Conspiracy", likes: "4511", author_name: "Hannah Bosch", is_pro_user: true>, #<Article id: 5, title: "The curious Scaler", description: "The never ending sequence of companies scaling the...", created_at: "2023-01-25 00:18:45.929692000 +0000", updated_at: "2023-01-25 00:18:45.929692000 +0000", topic: "Technology", likes: "780", author_name: "John Mukasa", is_pro_user: false>, #<Article id: 8, title: "The curious case of OpenAI technology in 2023", description: "This has come to our attention that OpenAI has bro...", created_at: "2023-01-25 01:02:16.481877000 +0000", updated_at: "2023-01-25 01:02:16.481877000 +0000", topic: nil, likes: nil, author_name: nil, is_pro_user: nil>, #<Article id: 9, title: "The Big Mess", description: "How can we assess the issues that have brought pro...", created_at: "2023-01-25 01:06:41.282162000 +0000", updated_at: "2023-01-25 01:06:41.282162000 +0000", topic: "Politics", likes: "5111", author_name: "Joe Malone", is_pro_user: false>]>):
+    4: <%# also helps to write ruby code inside html %>
+    5: <%# <%= variable - means evaluate and render to the screen %>
+    6: 
+    7: <h1><%= @articles.author_name%></h1>
+    8: <br></br>
+    9: <hr/>
+   10: 
+  
+app/views/articles/index.html.erb:7
+Started GET "/articles" for ::1 at 2023-01-29 19:04:56 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2896)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2984)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3234)
+
+
+  
+ActionView::Template::Error (undefined method `author_name' for #<ActiveRecord::Relation [#<Article id: 1, title: "The End of ChatGPT", description: "The end is here for open AI that has caused much d...", created_at: "2023-01-24 20:17:10.726770000 +0000", updated_at: "2023-01-25 00:41:43.916222000 +0000", topic: "Technology", likes: "155800", author_name: "Jack Niche", is_pro_user: false>, #<Article id: 2, title: "Issues of using React.js", description: "Lorem ipsum dolor sit amet, consectetur adipiscing...", created_at: "2023-01-24 20:29:33.382513000 +0000", updated_at: "2023-01-24 20:29:33.382513000 +0000", topic: "Technology", likes: "7882", author_name: "Kiwanuka Ben", is_pro_user: true>, #<Article id: 3, title: "Save Now or Never", description: "Become financial responsible during this recession...", created_at: "2023-01-24 20:33:53.777358000 +0000", updated_at: "2023-01-24 20:33:53.777358000 +0000", topic: "Business", likes: "25187", author_name: "Sarah Payson", is_pro_user: false>, #<Article id: 4, title: "Mysterious Conspiracies", description: "This will freak you out when you find out", created_at: "2023-01-25 00:13:55.739382000 +0000", updated_at: "2023-01-25 00:13:55.739382000 +0000", topic: "Conspiracy", likes: "4511", author_name: "Hannah Bosch", is_pro_user: true>, #<Article id: 5, title: "The curious Scaler", description: "The never ending sequence of companies scaling the...", created_at: "2023-01-25 00:18:45.929692000 +0000", updated_at: "2023-01-25 00:18:45.929692000 +0000", topic: "Technology", likes: "780", author_name: "John Mukasa", is_pro_user: false>, #<Article id: 8, title: "The curious case of OpenAI technology in 2023", description: "This has come to our attention that OpenAI has bro...", created_at: "2023-01-25 01:02:16.481877000 +0000", updated_at: "2023-01-25 01:02:16.481877000 +0000", topic: nil, likes: nil, author_name: nil, is_pro_user: nil>, #<Article id: 9, title: "The Big Mess", description: "How can we assess the issues that have brought pro...", created_at: "2023-01-25 01:06:41.282162000 +0000", updated_at: "2023-01-25 01:06:41.282162000 +0000", topic: "Politics", likes: "5111", author_name: "Joe Malone", is_pro_user: false>]>):
+    4: <%# also helps to write ruby code inside html %>
+    5: <%# <%= variable - means evaluate and render to the screen %>
+    6: 
+    7: <h1><%= @articles.author_name%></h1>
+    8: <br></br>
+    9: <hr/>
+   10: 
+  
+app/views/articles/index.html.erb:7
+Started GET "/articles" for ::1 at 2023-01-29 19:05:01 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 13741)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 14470)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:06:30 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2726)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3444)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:06:32 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2329)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2596)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:08:58 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:18
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1009)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3564)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 4289)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:09:36 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3508)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 4226)
+
+
+Started GET "/articles" for ::1 at 2023-01-29 19:12:24 -0500
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:21
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 945)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3514)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4232)
+
+
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]

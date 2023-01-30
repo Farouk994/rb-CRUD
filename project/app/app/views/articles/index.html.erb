@@ -1,0 +1,30 @@
+<h1>All Articles</h1>
+
+<%# use embedded ruby tags to access values from the instance variable %>
+<%# also helps to write ruby code inside html %>
+<%# <%= variable - means evaluate and render to the screen %>
+
+<%# <h1><%= @articles.author_name%></h1> %>
+<br></br>
+<hr/>
+
+<table>
+  <thead>
+    <tr>
+     <th>Title</th>
+     <th>Description</th>
+     <th>Action</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td><%= article.author_name %></td>
+        <td><button>View</button></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

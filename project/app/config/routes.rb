@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   # this gives us access to all routes of articles
   # you can add [:show] action to see the show routes
-  resources :articles, only: [:show]
+  # will expect index action inside article controller [:index]
+  resources :articles, only: [:show, :index]
 end

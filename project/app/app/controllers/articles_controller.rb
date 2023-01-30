@@ -3,7 +3,7 @@
 class ArticlesController < ApplicationController
 
   def show 
-    byebug
+    # byebug
     # params
     # params[:id]
 
@@ -13,7 +13,16 @@ class ArticlesController < ApplicationController
     # so make a variable into an instance variable
     # this makes it available inside the show/view
     @article = Article.find(params[:id])
+    # byebug
 
+  end
 
+  # this index action requires/expects "index html erb view" under views
+  def index
+    @articles = Article.all
+  end
+
+  def get_article
+    # @getArticle = Article.find(params)
   end
 end
