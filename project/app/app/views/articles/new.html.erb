@@ -1,0 +1,29 @@
+<h1>CREATE NEW ARTICLE</h1>
+
+<%= form_with url: "/new", method: :post do |form| %>
+  <%= form.label :query, "Add New Article:" %>
+  <%= form.text_field :query %>
+  <%= form.submit "NEW" %>
+<% end %>
+
+<%= form_with scope: :article, url: "/articles_path", local: true do |form|%>
+<%# # Ex:- scope :active, -> {where(:active => true)}: "/search", method: :get do |form| %> %>
+  <%# <%= form.label :query, "Search for:" %>
+
+
+  <p>
+   <%= form.label :title%>
+   <%= form.text_field :title%>
+  </p>
+  <p>
+   <%= form.label :description%>
+   <%= form.text_area :description%>
+  </p>
+  <p>
+   <%= form.label :author_name%>
+   <%= form.text_area :author_name%>
+  </p>
+  <p>
+    <%= form.submit "Submit"%>
+  </p>
+<% end %>

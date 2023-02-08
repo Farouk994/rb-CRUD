@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_24_195758) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_07_173208) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -20,6 +20,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_24_195758) do
     t.binary "likes"
     t.string "author_name"
     t.boolean "is_pro_user"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "topic"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "category"
+    t.string "author"
+    t.string "snippet"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "occupation"
+    t.string "username"
+    t.string "email"
+    t.string "password"
+    t.string "address"
   end
 
 end

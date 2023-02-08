@@ -22,7 +22,11 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
-  def get_article
-    # @getArticle = Article.find(params)
+  def new
+
+  end
+
+  def create
+    render plain: params[:article]
   end
 end
